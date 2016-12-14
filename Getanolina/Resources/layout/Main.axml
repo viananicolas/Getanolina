@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:minWidth="25px"
+    android:minHeight="25px">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="446.0dp"
+        android:id="@+id/linearLayout1">
+        <TextView
+            android:text="@string/SelecionaMarca"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView1" />
+        <Spinner
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/marcaSpinner"
+            android:prompt="@string/SelecionaMarca" />
+        <TextView
+            android:text="@string/SelecionaModelo"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView2" />
+        <Spinner
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/modeloSpinner"
+            android:prompt="@string/SelecionaModelo" />
+        <TextView
+            android:text="@string/SelecionaAno"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView3" />
+        <Spinner
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/anoSpinner"
+            android:prompt="@string/SelecionaModelo" />
+        <TextView
+            android:text="Informe a autonomia mensal"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView4" />
+        <EditText
+            android:inputType="numberDecimal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/editText1" />
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/linearLayout2">
+            <TextView
+                android:text="Possui kit GNV?"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:id="@+id/textView5"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:paddingTop="10dp" />
+            <ToggleButton
+                android:id="@+id/toggleButtonGNV"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:minWidth="25px"
+            android:minHeight="25px"
+            android:layout_width="match_parent"
+            android:layout_height="30.0dp"
+            android:id="@+id/linearLayout3">
+            <TextView
+                android:text="Preço gasolina "
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:id="@+id/textView6" />
+            <TextView
+                android:text="| Preço álcool "
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:id="@+id/textView7" />
+            <TextView
+                android:text="| Preço GNV"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:id="@+id/textView8" />
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/linearLayout4">
+            <EditText
+                android:inputType="numberDecimal"
+                android:layout_width="124.5dp"
+                android:layout_height="match_parent"
+                android:id="@+id/editTextGasolina" />
+            <EditText
+                android:inputType="numberDecimal"
+                android:layout_width="115.5dp"
+                android:layout_height="match_parent"
+                android:id="@+id/editTextAlcool" />
+            <EditText
+                android:inputType="numberDecimal"
+                android:layout_width="101.5dp"
+                android:layout_height="match_parent"
+                android:id="@+id/editTextGNV" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>
