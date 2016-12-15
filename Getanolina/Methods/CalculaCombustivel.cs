@@ -19,16 +19,19 @@ namespace Getanolina.Methods
             return null;
         }
 
-        public static string VerificaCombustivel(double alcool, double gasolina, double gnv)
+        public static string VerificaCombustivel(double alcool, double gasolina, double gnv, double quilometragem, double litragemMensal)
         {
-            //var consumoComb = KmsRodados / Rendimento;
-            //var gastocomb = consumoComb * Combustivel;
-            //var consumoGNV = KmsRodados / 12.5;
-            //var gastoGNV = (KmsRodados / 12.5) * GNV;
-            //var economia = (gastocomb) - (gastoGNV);
+            var consumoComb = quilometragem / litragemMensal;
+            var gastocombGas = consumoComb * gasolina;
+            var gastocombAlco = consumoComb * alcool;
+            var consumoGNV = quilometragem / 12.5;
+            var gastoGNV = (quilometragem / 12.5) * gnv;
+            var economiaGas = (gastocombGas) - (gastoGNV);
+            var economiaAlco = (gastocombAlco) - (gastoGNV);
             //var payback = Instalacao / economia;
-            //var custoCombKm = Combustivel / Rendimento;
-            //var custoGNVKm = GNV / 12.5;
+            var custoGasKm = gasolina / litragemMensal;
+            var custoAlcoKm = alcool / litragemMensal;
+            var custoGNVKm = gnv / 12.5;
             return null;
         }
     }

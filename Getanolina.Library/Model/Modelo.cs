@@ -4,19 +4,12 @@ namespace Getanolina.Library.Model
 {
     public class Modelo
     {
-        private int _codigo;
-        private string _nome;
         public string nome { get; set; }
         public int codigo { get; set; }
 
-        public Modelo()
-        {
-            this._nome = "";
-            this._codigo = 0;
-        }
         public void SetId(int id)
         {
-            this._codigo = id;
+            this.codigo = id;
         }
 
         public int GetId()
@@ -39,6 +32,26 @@ namespace Getanolina.Library.Model
     {
         public string nome { get; set; }
         public string codigo { get; set; }
+        public void SetId(string id)
+        {
+            this.codigo = id;
+        }
+
+        public string GetId()
+        {
+            return this.codigo;
+        }
+
+        public void SetName(string name)
+        {
+            this.nome = name;
+        }
+
+        public string GetName()
+        {
+            return this.nome;
+        }
+
     }
 
     public class RootObject
